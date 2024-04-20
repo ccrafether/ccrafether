@@ -4,7 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的作品集</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+    a{
+        color:blue;
+        text-decoration:none
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ecf0f1; /* 浅蓝色背景 */
+        color: #34495e; /* 深灰色文字 */
+    }
+
+    header {
+        background-color: #3498db; /* 蓝色背景 */
+        color: white;
+        text-align: center;
+        padding: 1em; /* 调整高度 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    div.sticky{
+        background-color: #3498db; /* 蓝色底部背景 */
+        color: rgba(255, 255, 255, 0);
+
+        text-align: center;
+        padding: 1em;
+        position: sticky;
+        top: 0px;
+        bottom: 0;
+        width: 100%;
+    }
+
+    nav {
+        background-color: #3498db; /* 蓝色背景 */
+        padding: 0.5em; /* 调整高度 */
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1em;
+        padding: 0.3em 0.8em; /* 调整高度和宽度 */
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+        background-color: #2980b9; /* 深蓝色悬停效果 */
+    }
+
+    /* 为常见的矩形元素添加圆角 */
+    div, section, article, header, footer, main, nav, aside,
+    table, tbody, thead, tfoot, tr, td, th,
+    img[width][height] {
+        border-radius: 1px; /* 调整这个值以改变圆角大小 */
+    }
+
+    /* 具体元素的圆角样式可根据需要进行覆盖或微调 */
+            
+    /* 作品集头部 */
+    .portfolio-header {
+        color:#ffffff;;
+        background-color: #3498db;
+        text-align: center;
+        padding: 1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 1;
+        border-radius: ⅓rem ⅓rem 0 0; /* 只保留顶部圆角 */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 作品集部分 */
+    #portfolio {
+        background-color: white;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 3px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+
+    section {
+        padding: 2em; /* 调整高度 */
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: 4em; /* 调整高度 */
+    }
+
+    h1 {
+        color: white; /* 白色标题 */
+        padding: 0.5em;
+        border-radius: 5px;
+    }
+
+    h3 {
+        color: #3498db; /* 蓝色标题 */
+        padding: 0.5em;
+        border-radius: 5px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1em;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #3498db; /* 蓝色标题背景 */
+        color: white;
+    }
+
+    td {
+        word-wrap: break-word;
+    }
+
+    /* 表格样式 */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+        border-radius: 3px;
+    }
+
+    th {
+        background-color: #3498db;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        vertical-align: top;
+    }
+
+    td a {
+        display: block;
+        margin-bottom: ¼rem;
+        color: #333;
+        text-decoration: none;
+    }
+
+    td a:hover {
+        color: #3498db;
+    }
+    </style>
 </head>
 <body>
     <header>
